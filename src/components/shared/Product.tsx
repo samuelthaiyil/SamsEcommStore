@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 
 class Product extends Component<
   { name: string; company: string; description?: string },
@@ -9,7 +9,7 @@ class Product extends Component<
   }
   render() {
     return (
-      <div className="card" style={{ maxWidth: "200px", minHeight: "100px" }}>
+      <div className="card" style={{ width: "100%", height: "100%" }}>
         <img src="" alt="" />
         <div className="card-body">
           <h3 className="card-title">{this.props.name}</h3>
@@ -19,14 +19,14 @@ class Product extends Component<
         <button
           style={{
             color: "white",
-            backgroundColor: "black",
+            backgroundColor: "#ff6247",
             border: "none",
             margin: "15px",
             borderRadius: "5px",
             padding: "10px"
           }}
         >
-          More Info
+          Buy
         </button>
       </div>
     );
