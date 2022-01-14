@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class StoreHeader extends Component {
+export default class StoreHeader extends Component {
   render() {
     return (
       <div className="row">
@@ -16,4 +16,3 @@ class StoreHeader extends Component {
   }
 }
 
-export default StoreHeader;
